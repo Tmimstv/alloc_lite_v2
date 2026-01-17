@@ -1,3 +1,6 @@
+#ifndef ALLOC_LITE_H
+#define ALLOC_LITE_H
+
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -15,9 +18,9 @@ typedef struct BlockHeader {
 
 
 void al_init(size_t size_in_pages);
-void* a;_alloc(size_t size);
+void* al_alloc(size_t size);
 void al_free(void* ptr);
 
-
+#endif //ALLOC_LITE_H
 
 

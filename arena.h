@@ -1,3 +1,6 @@
+#ifndef ARENA_H
+#define ARENA_H
+
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -18,3 +21,5 @@ void* arena_alloc(Arena* a, size_t size);
 void arena_reset(Arena* a);
 void arena_destroy(Arena* a);
 size_t align_up(size_t ptr, size_t align);
+
+#endif //ARENA_H
